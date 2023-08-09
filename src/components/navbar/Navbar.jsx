@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [open, setOpen] = useState(false);
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
   };
@@ -23,7 +25,9 @@ const Navbar = () => {
     <div className={active ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="logo">
-          <span className="text">Fiverr</span>
+          <Link to="/" className="link">
+            <span className="text">Fiverr</span>
+          </Link>
           <span className="dot">.</span>
         </div>
         <div className="links">
@@ -32,17 +36,38 @@ const Navbar = () => {
           <span>English</span>
           <span>Sign in</span>
           {!currentUser?.isSeller && <span>Become a Seller</span>}
-          {!currentUser &&  <button>join</button>}
+          {!currentUser && <button>join</button>}
           {currentUser && (
-            <div className="user">
-                <img src="" alt="" />
-                <span>{currentUser?.username}</span>
+            <div className="user" onClickCapture={() => setOpen(!open)}>
+              <img src="./images/bdr.jpg" alt="" />
+              <span>{currentUser?.username}</span>
+              {open && (
                 <div className="options">
-                   
+                  {currentUser?.isSeller && (
+                    <>
+                      <Link className="link" to="/mygigs">
+                        <span>Gigs</span>
+                      </Link>
+
+                      <Link  className="link" to="/add">
+                        <span>Add New Gig</span>
+                      </Link>
+                    </>
+                  )}
+                  <Link className="link" to="/orders">
+                    <span>Orders</span>
+                  </Link>
+                  <Link  className="link" to="/messages">
+                    <span>Messages</span>
+                  </Link>
+
+                  <Link  className="link" to="/">
+                    <span>Logout</span>
+                  </Link>
                 </div>
+              )}
             </div>
           )}
-         
         </div>
       </div>
       {active && (
