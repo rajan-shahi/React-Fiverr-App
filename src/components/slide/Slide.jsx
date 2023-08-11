@@ -1,18 +1,18 @@
 import React from "react";
 import "./slide.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from 'swiper/modules';
+import { Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import CatCard from "../catCard/CatCard";
 import { cards } from "../../data";
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 
 const Slide = () => {
   return (
     <Swiper
-    modules={[Navigation]}
-      spaceBetween={5}
+      modules={[Navigation]}
+      spaceBetween={30}
       slidesPerView={5}
       navigation
       onSlideChange={() => console.log("slide change")}
@@ -23,12 +23,6 @@ const Slide = () => {
           <CatCard item={card} />
         </SwiperSlide>
       ))}
-
-    
-
-
-
-      ...
     </Swiper>
   );
 };

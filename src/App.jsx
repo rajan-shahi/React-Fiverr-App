@@ -4,14 +4,14 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import Gigs from './pages/gigs/Gigs';
+import Gigs from "./pages/gigs/Gigs";
 import Gig from "./pages/gig/Gig";
-import Orders from './pages/orders/Orders';
-import MyGigs from './pages/myGigs/MyGigs';
-import Add from './pages/add/Add';
-import Messages from './pages/messages/Messages';
-import Message from './pages/message/Message';
-import "./app.scss"
+import Orders from "./pages/orders/Orders";
+import MyGigs from "./pages/myGigs/MyGigs";
+import Add from "./pages/add/Add";
+import Messages from "./pages/messages/Messages";
+import Message from "./pages/message/Message";
+import "./app.scss";
 
 function App() {
   const Layout = () => {
@@ -26,47 +26,47 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout/>,
-      children:[
+      element: <Layout />,
+      children: [
         {
-          path:"/",
-          element:<Home/>
+          path: "/",
+          element: <Home />,
         },
 
         {
-          path:"/gigs",
-          element:<Gigs/>
+          path: "/gigs",
+          element: <Gigs />,
         },
 
         {
-          path:"/gig/id",
-          element:<Gig/>
+          path: "/gig/id",
+          element: <Gig />,
         },
 
         {
-          path:"/orders",
-          element:<Orders/>
+          path: "/orders",
+          element: <Orders />,
         },
 
         {
-          path:"/mygigs",
-          element:<MyGigs/>
+          path: "/mygigs",
+          element: <MyGigs />,
         },
 
         {
-          path:"/add",
-          element:<Add/>
+          path: "/add",
+          element: <Add />,
         },
 
         {
-          path:"/messages",
-          element:<Messages/>
+          path: "/messages",
+          element: <Messages />,
         },
         {
-          path:"/message/id",
-          element:<Message/>
-        }
-      ]
+          path: "/message/id",
+          element: <Message />,
+        },
+      ],
     },
   ]);
 

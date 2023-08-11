@@ -1,10 +1,10 @@
 import React from "react";
 import "./catCard.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const CatCard = ({item }) => {
   return (
-    <Link to="/gigs?cat=design">
+    // <Link to="/gigs?cat=design">
       <div className="catCard">
         <div className="container">
           <img src={item.img} alt="" />
@@ -12,7 +12,7 @@ const CatCard = ({item }) => {
           <span className="title">{item.title}</span>
         </div>
       </div>
-    </Link>
+    // </Link>
   );
 };
 
