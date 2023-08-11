@@ -14,16 +14,27 @@
         color: white !important;
         margin-bottom: 20px !important;
       }
-      .title{
+      .titile{
         color: white !important;
         font-weight: 300 !important;
         font-size: 14px !important;
+        align-items: center;
+        
+        img{
+          height: 20px;
+          margin: 0px 10px;
+        }
       }
     
       button{
         background-color: #1dbf73;
         padding: 10px 20px;
         border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        border: none;
+        width: max-content;
       }
     }
     .container {
@@ -53,7 +64,7 @@
         margin-bottom: 10px;
         font-weight: 300;
       }
-      .title {
+      .title{
         display: flex;
         align-items: center;
         gap: 10px;
