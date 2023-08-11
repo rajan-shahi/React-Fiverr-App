@@ -1,0 +1,52 @@
+.home {
+  .features {
+    background: #f1fdf7;
+    display: flex;
+    justify-self: center;
+    padding: 100px 50px;
+    .container {
+      display: flex;
+      width: 1400px;
+      align-items: center;
+      gap: 200px;
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &:first-child {
+          flex: 2;
+        }
+        &:last-child {
+          flex: 3;
+        }
+      }
+      p {
+        font-size: 12px;
+        color: grey;
+        line-height: 28px;
+        letter-spacing: 1px;
+      }
+      h1 {
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        color: gray;
+
+        img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+      video {
+        width: 500px;
+      }
+    }
+  }
+}
