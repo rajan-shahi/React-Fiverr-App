@@ -4,6 +4,28 @@
     display: flex;
     justify-self: center;
     padding: 100px 50px;
+
+    &.dark{
+      background-color: #0d084d;
+      h1{
+        color: white !important;
+      }
+      p{
+        color: white !important;
+        margin-bottom: 20px !important;
+      }
+      .title{
+        color: white !important;
+        font-weight: 300 !important;
+        font-size: 14px !important;
+      }
+    
+      button{
+        background-color: #1dbf73;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
     .container {
       display: flex;
       width: 1400px;
@@ -21,9 +43,9 @@
         }
       }
       p {
-        font-size: 12px;
+        font-size: 15px;
         color: grey;
-        line-height: 28px;
+        line-height: 20px;
         letter-spacing: 1px;
       }
       h1 {
