@@ -2,9 +2,7 @@ import React from "react";
 import "./home.scss";
 import Featured from "../../components/featured/Featured";
 import TrustedBy from "../../components/trustedBy/TrustedBy";
-
 import Slide from "../../components/slide/Slide";
-
 
 const Home = () => {
   return (
@@ -65,12 +63,12 @@ const Home = () => {
 
             <div className="titile">
               <img src="./images/check.png" alt="" />
-            Get matched with the perfect talent by a customer success manager 
+              Get matched with the perfect talent by a customer success manager
             </div>
 
             <div className="titile">
               <img src="./images/check.png" alt="" />
-             Manage teamwork and boost productivity with one powerful workspace
+              Manage teamwork and boost productivity with one powerful workspace
             </div>
             <button>Explore fiverr Business</button>
           </div>
