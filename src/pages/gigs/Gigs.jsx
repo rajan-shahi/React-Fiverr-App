@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./gigs.scss";
+import GigCard from './../../components/catCard/gigCard/GigCard';
+import {gigs} from "../../data";
 
 const Gigs = () => {
   const [sort, setSort] = useState("sales");
@@ -36,11 +38,19 @@ const Gigs = () => {
             />
             {open && (
               <div className="rightMenu">
-                <span onClick={() => reSort("creatdAt")}>Newest</span>
-                <span onClick={() => reSort("sales")}>Best Selling</span>
+                {sort == "sales" ? (
+                  <span onClick={() => reSort("creatdAt")}>Newest</span>
+                ) : (
+                  <span onClick={() => reSort("sales")}>Best Selling</span>
+                )}
               </div>
             )}
           </div>
+        </div>
+        <div className="cards">
+          {gigs.map(gig=>(
+            <GigCard key={gig.id} item ={gig}/>
+          ))}
         </div>
       </div>
     </div>

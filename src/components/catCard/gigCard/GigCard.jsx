@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function GigCard({item}) {
   return (
-    <Link to ="/gig/123">
+    <Link to ="/gig/123" className='link'>
     <div className="gigCard">
         <img src={item.img} alt="" />
         <div className="info">
