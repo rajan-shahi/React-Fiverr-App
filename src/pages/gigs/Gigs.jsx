@@ -29,7 +29,7 @@ const Gigs = () => {
           <div className="right">
             <span className="sortBy">sortBy</span>
             <span className="sortType">
-              {sort == "sales" ? "Best Selling" : "newest"}
+              {sort === "sales" ? "Best Selling" : "newest"}
             </span>
             <img
               src="./images/down.png"
@@ -38,7 +38,7 @@ const Gigs = () => {
             />
             {open && (
               <div className="rightMenu">
-                {sort == "sales" ? (
+                {sort === "sales" ? (
                   <span onClick={() => reSort("creatdAt")}>Newest</span>
                 ) : (
                   <span onClick={() => reSort("sales")}>Best Selling</span>
