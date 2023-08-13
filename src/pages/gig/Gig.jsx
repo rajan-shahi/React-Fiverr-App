@@ -1,6 +1,6 @@
 import React from "react";
 import "./gig.scss";
-import Slide from "../../components/slide/Slide";
+// import Slide from "../../components/slide/Slide";
 
 const Gig = () => {
   return (
@@ -11,6 +11,7 @@ const Gig = () => {
           <h1>I will create a ai generated art for you</h1>
           <div className="user">
             <img
+              className="pp"
               src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
             />
@@ -24,11 +25,12 @@ const Gig = () => {
               <span>5</span>
             </div>
           </div>
-          <Slide>
-            <img
+          {/* <Slide className="slider"> */}
+          <div className="img-container">
+            {/* <img
               src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
-            />
+            /> */}
             <img
               src="https://images.pexels.com/photos/1462935/pexels-photo-1462935.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
@@ -37,7 +39,8 @@ const Gig = () => {
               src="https://images.pexels.com/photos/1054777/pexels-photo-1054777.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
             />
-          </Slide>
+          </div>
+          {/* </Slide> */}
           <h2>About this Gig</h2>
           <p>
             {" "}
@@ -64,12 +67,15 @@ const Gig = () => {
               />
               <div className="info">
                 <span>Rajan Shahi</span>
-                <img src="/images/star.png" alt="" />
-                <img src="/images/star.png" alt="" />
-                <img src="/images/star.png" alt="" />
-                <img src="/images/star.png" alt="" />
-                <img src="/images/star.png" alt="" />
-                <span>5</span>
+                <div className="stars">
+                  <img src="/images/star.png" alt="" />
+                  <img src="/images/star.png" alt="" />
+                  <img src="/images/star.png" alt="" />
+                  <img src="/images/star.png" alt="" />
+                  <img src="/images/star.png" alt="" />
+                  <span>5</span>
+                </div>
+
                 <button>Contact Me</button>
               </div>
             </div>
@@ -111,7 +117,7 @@ const Gig = () => {
             <h2>Reviews</h2>
             <div className="item">
               <div className="user">
-              <img
+                <img
                   className="pp"
                   src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600"
                   alt=""
@@ -119,7 +125,8 @@ const Gig = () => {
                 <div className="info">
                   <span>rajan shahi</span>
                   <div className="country">
-                  <img
+                    <img
+                      className="pp"
                       src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
                       alt=""
                     />
@@ -128,20 +135,31 @@ const Gig = () => {
                 </div>
               </div>
               <div className="stars">
-              <img src="/images/star.png" alt="" />
+                <img src="/images/star.png" alt="" />
                 <img src="/images/star.png" alt="" />
                 <img src="/images/star.png" alt="" />
                 <img src="/images/star.png" alt="" />
                 <img src="/images/star.png" alt="" />
                 <span>5</span>
               </div>
-              <p> I just want to say that art_with_ai was the first, and after
+              <p>
+                {" "}
+                I just want to say that art_with_ai was the first, and after
                 this, the only artist Ill be using on Fiverr. Communication was
                 amazing, each and every day he sent me images that I was free to
                 request changes to. They listened, understood, and delivered
                 above and beyond my expectations. I absolutely recommend this
-                gig, and know already that Ill be using it again very very soon</p>
+                gig, and know already that Ill be using it again very very soon
+              </p>
+              <div className="helpful">
+                <span>Helpful?</span>
+                <img src="/images/like.png" alt="" />
+                <span>Yes</span>
+                <img src="/images/dislike.png" alt="" />
+                <span>No</span>
+              </div>
             </div>
+            <hr />
           </div>
         </div>
         <div className="right"></div>
