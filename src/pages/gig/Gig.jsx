@@ -162,7 +162,47 @@ const Gig = () => {
             <hr />
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="price">
+            <h3>I Ai generated image</h3>
+            <h2>$ 59.99</h2>
+          </div>
+          <p>
+            I will create a unique high quality Ai generated image based on a
+            description that you give me
+          </p>
+          <div className="details">
+            <div className="item">
+              <img src="/images/clock.png" alt="" />
+              <span>2 days Delivery</span>
+            </div>
+
+            <div className="item">
+              <img src="/images/recycle.png" alt="" />
+              <span>3 Revisisons</span>
+            </div>
+          </div>
+          <div className="features">
+            <div className="item">
+              <img src="/images/greencheck.png" alt="" />
+              <span>prompt writing</span>
+            </div>
+            <div className="item">
+              <img src="/images/greencheck.png" alt="" />
+              <span>prompt writing</span>
+            </div>
+            <div className="item">
+              <img src="/images/greencheck.png" alt="" />
+              <span>prompt writing</span>
+            </div>
+            <div className="item">
+              <img src="/images/greencheck.png" alt="" />
+              <span>prompt writing</span>
+            </div>
+            
+          </div>
+          <button>Continue</button>
+        </div>
       </div>
     </div>
   );
