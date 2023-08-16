@@ -2,9 +2,126 @@ import React from 'react'
 import "./orders.scss"
 
 const Orders = () => {
+
+  const currentUser ={
+    id: 1,
+    username: "rajan Shahi",
+    isSeller: true,
+  };
+
+
   return (
-    <div>
-      this is orders page
+    <div className='orders'>
+     <div className="container">
+        <div className="title">
+          <h1>Orders</h1>
+
+        </div>
+        <table>
+          <tr>
+            <th>images</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>{currentUser?.isSeller ? "Buyer": "Seller"}</th>
+            <th>Contacts</th>
+          </tr>
+          <tr>
+            <td>
+              <img
+                className="img"
+                src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </td>
+            <td>Gig1</td>
+            <td>88</td>
+            <td>123</td>
+            <td>
+              <img src="/images/delete.png" alt="" className="delete" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                className="img"
+                src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </td>
+            <td>Gig1</td>
+            <td>88</td>
+            <td>123</td>
+            <td>
+              <img src="/images/delete.png" alt="" className="delete" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                className="img"
+                src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </td>
+            <td>Gig1</td>
+            <td>88</td>
+            <td>123</td>
+            <td>
+              <img src="/images/delete.png" alt="" className="delete" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                className="img"
+                src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </td>
+            <td>Gig1</td>
+            <td>88</td>
+            <td>123</td>
+            <td>
+              <img src="/images/delete.png" alt="" className="delete" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                className="img"
+                src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </td>
+            <td>Gig1</td>
+            <td>88</td>
+            <td>123</td>
+            <td>
+              <img src="/images/delete.png" alt="" className="delete" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                className="img"
+                src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </td>
+            <td>Gig1</td>
+            <td>88</td>
+            <td>123</td>
+            <td>
+              <img src="/images/delete.png" alt="" className="delete" />
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
   )
 }
