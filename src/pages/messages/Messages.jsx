@@ -1,5 +1,6 @@
 import React from "react";
 import "./messages.scss";
+import { Link } from "react-router-dom";
 
 const Messages = () => {
   const message =
@@ -19,7 +20,12 @@ const Messages = () => {
           </tr>
           <tr className="active">
             <td>Rajan Shahi</td>
-            <td>{message.substring(0, 100)}....</td>
+            <td>
+              {" "}
+              <Link to="/message/id" className="link">
+                {message.substring(0, 100)}....
+              </Link>
+            </td>
             <td>1 day ago</td>
             <td>
               <button>Mark as Read</button>
@@ -28,7 +34,11 @@ const Messages = () => {
 
           <tr className="active">
             <td>loki chaulagain</td>
-            <td>{message.substring(0, 100)}....</td>
+            <td>
+              <Link to="/message/id" className="link">
+                {message.substring(0, 100)}....
+              </Link>
+            </td>
             <td>3 day ago</td>
             <td>
               <button>Mark as Read</button>
@@ -37,38 +47,42 @@ const Messages = () => {
 
           <tr>
             <td>Gita Bista</td>
-            <td>{message.substring(0, 100)}....</td>
-            <td> 5 day ago</td>
             <td>
-              <button>Mark as Read</button>
+              <Link to="/message/id" className="link">
+                {message.substring(0, 100)}....
+              </Link>
             </td>
+            <td> 5 day ago</td>
           </tr>
 
           <tr>
             <td>Saroj kumar Rokaya</td>
-            <td>{message.substring(0, 100)}....</td>
-            <td>1 week ago</td>
             <td>
-              <button>Mark as Read</button>
+              <Link to="/message/id" className="link">
+                {message.substring(0, 100)}....
+              </Link>
             </td>
+            <td>1 week ago</td>
           </tr>
 
           <tr>
             <td>Jun Parsad Rokaya</td>
-            <td>{message.substring(0, 100)}....</td>
-            <td>3 week ago</td>
             <td>
-              <button>Mark as Read</button>
+              <Link to="/message/id" className="link">
+                {message.substring(0, 100)}....
+              </Link>
             </td>
+            <td>3 week ago</td>
           </tr>
 
           <tr>
             <td>Riya Thapa</td>
-            <td>{message.substring(0, 100)}....</td>
-            <td>13 day ago</td>
             <td>
-              <button>Mark as Read</button>
+              <Link to="/message/id" className="link">
+                {message.substring(0, 100)}....
+              </Link>
             </td>
+            <td>13 day ago</td>
           </tr>
         </table>
       </div>
