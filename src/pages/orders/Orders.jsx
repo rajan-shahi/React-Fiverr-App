@@ -27,8 +27,8 @@ const Orders = () => {
           </tr>
           <tr>
             <td>
-              <img
-                className="img"
+            <img
+                className="image"
                 src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
@@ -37,14 +37,14 @@ const Orders = () => {
             <td>88</td>
             <td>123</td>
             <td>
-              <img src="/images/delete.png" alt="" className="delete" />
+              <img src="/images/message.png" alt="" className="delete" />
             </td>
           </tr>
 
           <tr>
             <td>
-              <img
-                className="img"
+            <img
+                className="image"
                 src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
@@ -53,14 +53,14 @@ const Orders = () => {
             <td>88</td>
             <td>123</td>
             <td>
-              <img src="/images/delete.png" alt="" className="delete" />
+              <img src="/images/message.png" alt="" className="delete" />
             </td>
           </tr>
 
           <tr>
             <td>
-              <img
-                className="img"
+            <img
+                className="image"
                 src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
@@ -69,30 +69,31 @@ const Orders = () => {
             <td>88</td>
             <td>123</td>
             <td>
-              <img src="/images/delete.png" alt="" className="delete" />
+              <img src="/images/message.png" alt="" className="delete" />
             </td>
           </tr>
 
           <tr>
             <td>
-              <img
-                className="img"
+            <img
+                className="image"
                 src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
+             
             </td>
             <td>Gig1</td>
             <td>88</td>
             <td>123</td>
             <td>
-              <img src="/images/delete.png" alt="" className="delete" />
+              <img src="/images/message.png" alt="" className="delete" />
             </td>
           </tr>
 
           <tr>
             <td>
-              <img
-                className="img"
+            <img
+                className="image"
                 src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
@@ -101,14 +102,14 @@ const Orders = () => {
             <td>88</td>
             <td>123</td>
             <td>
-              <img src="/images/delete.png" alt="" className="delete" />
+              <img src="/images/message.png" alt="" className="delete" />
             </td>
           </tr>
 
           <tr>
             <td>
-              <img
-                className="img"
+            <img
+                className="image"
                 src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
@@ -117,7 +118,7 @@ const Orders = () => {
             <td>88</td>
             <td>123</td>
             <td>
-              <img src="/images/delete.png" alt="" className="delete" />
+              <img src="/images/message.png" alt="" className="delete" />
             </td>
           </tr>
         </table>
